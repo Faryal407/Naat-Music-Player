@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+     background-image: linear-gradient(to right , rgb(232, 88, 112) , rgb(227, 14, 99) ,
+     rgb(205, 76, 130), plum);
+}
+.heading{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    background-image: url("./images/flower.jpeg");
+    background-clip: text;
+    color: transparent;
+}
+.container{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.player{
+    padding: 10px;
+    border-radius: 20px;
+     background-image: linear-gradient(to right , rgb(232, 88, 112) , rgb(227, 14, 99) ,
+     rgb(205, 76, 130), plum);
+    background-size: cover;
+    cursor: pointer;
+    margin-bottom: 10px;
+     transition: transform 0.4s;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+.player:hover{
+    transform: scale(1.03);
+     box-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+.background{
+    width: 250px;
+    height: 300px;
+    border: 6px solid rgb(34, 121, 214);
+    border-radius: 50px;
+     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+.content{
+    margin: 10px;
+}
+#progress{
+    width: 60%;
+    margin: 10px;
+    accent-color: rgb(214, 21, 127);
+}
+#time{
+    color: rgb(225, 22, 107);
+    font-size: 15px;
+}
+.btn{
+    border-radius: 50px;
+     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+     padding: 5px;
+     margin: 5px;
+     transition: transform 0.4s;
+}
+.btn:hover{
+     transform: scale(1.03);
+     box-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+.btn:active{
+      box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.4);
+}
