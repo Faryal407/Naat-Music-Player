@@ -111,3 +111,32 @@ sound4.ontimeupdate = () => {
 progress4.oninput = () => {
     sound4.currentTime = (progress4.value / 100) * sound4.duration;
 }
+
+//call card 5 buttons
+let play5 = document.getElementById("play5");
+let pause5 = document.getElementById("pause5");
+let time5 = document.getElementById("time5");
+let progress5 = document.getElementById("progress5");
+
+
+let sound5 = new Audio("./music/muhammad-ka-roza.mp3");
+
+
+play5.addEventListener("click", () => {
+    sound5.play();
+})
+pause5.addEventListener("click", () => {
+    sound5.pause();
+})
+
+sound5.ontimeupdate = () => {
+    progress5.value = (sound5.currentTime / sound5.duration) * 100;
+
+    let minutes5 = Math.floor(sound5.currentTime / 60);
+    let seconds5 =  Math.floor(sound5.currentTime % 60);
+
+    time5.textContent = `${minutes5}:${seconds5.toString().padStart(2, '0')}`;
+};
+progress5.oninput = () => {
+    sound5.currentTime = (progress5.value / 100) * sound5.duration;
+}
