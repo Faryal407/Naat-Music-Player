@@ -32,8 +32,8 @@ body{
     width: 500px;
     height: 500px;
     border-radius: 50px;
-    box-shadow: 20px 20px 80px rgb(13, 171, 228);
-      border: 5px solid rgb(13, 171, 228);
+    box-shadow: 20px 20px 80px rgb(14, 14, 14);
+      border: 5px solid rgb(228, 13, 120);
 }
 .back:hover{
     background-image: url(./images/background2gif.gif);
@@ -52,13 +52,13 @@ body{
     justify-content: center;
     text-align: center;
     background-color: rgb(223, 61, 115);
-    color: rgb(67, 56, 60);
+    color: rgb(24, 24, 24);
     padding: 15px;
    border-radius: 20px;
    margin-top: 10px;
 }
 .visit:hover{
-  background-color: rgb(63, 62, 62);
+  background-color: rgb(14, 14, 14);
   color: aliceblue;
   cursor: pointer;
   text-decoration: none;
